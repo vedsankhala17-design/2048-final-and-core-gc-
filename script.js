@@ -20,3 +20,22 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 });
+document.addEventListener("keydown", function(e){
+
+if(e.key === "ArrowLeft"){
+console.log("Move Left");
+}
+
+if(e.key === "ArrowRight"){
+console.log("Move Right");
+}
+
+if(e.key === "ArrowUp"){
+console.log("Move Up");
+}
+
+if(e.key === "ArrowDown"){
+console.log("Move Down");
+}
+
+});
