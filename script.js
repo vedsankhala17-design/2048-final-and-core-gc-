@@ -6,6 +6,21 @@ let board = [
 [0,0,0,0],
 [0,0,0,0]
 ];
+    function updateBoard(){
+
+let index = 0;
+
+for(let row = 0; row < 4; row++){
+for(let col = 0; col < 4; col++){
+
+tiles[index].innerText = board[row][col] === 0 ? "" : board[row][col];
+
+index++;
+
+}
+}
+
+}
     // start with two tiles
     addNumber();
     addNumber();
