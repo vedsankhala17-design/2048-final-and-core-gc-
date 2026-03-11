@@ -53,20 +53,20 @@ updateBoard();
 });
 document.addEventListener("keydown", function(e){
 
-if(e.key === "ArrowLeft"){
-console.log("Move Left");
+if(e.key == "ArrowLeft"){
+moveLeft();
 }
 
-if(e.key === "ArrowRight"){
-console.log("Move Right");
+if(e.key == "ArrowRight"){
+moveRight();
 }
 
-if(e.key === "ArrowUp"){
-console.log("Move Up");
+if(e.key == "ArrowUp"){
+moveUp();
 }
 
-if(e.key === "ArrowDown"){
-console.log("Move Down");
+if(e.key == "ArrowDown"){
+moveDown();
 }
 
 });
