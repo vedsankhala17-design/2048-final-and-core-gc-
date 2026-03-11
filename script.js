@@ -70,3 +70,7 @@ moveDown();
 }
 
 });
+
+function moveLeft(){
+console.log("Left move working");
+}
