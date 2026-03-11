@@ -25,20 +25,31 @@ index++;
     addNumber();
     addNumber();
 
-    function addNumber() {
-        let emptyTiles = [];
+    function addNumber(){
 
-        tiles.forEach(tile => {
-            if (tile.innerText === "") {
-                emptyTiles.push(tile);
-            }
-        });
+let empty = [];
 
-        if (emptyTiles.length > 0) {
-            let randomTile = emptyTiles[Math.floor(Math.random() * emptyTiles.length)];
-            randomTile.innerText = "2";
-        }
-    }
+for(let r = 0; r < 4; r++){
+for(let c = 0; c < 4; c++){
+
+if(board[r][c] === 0){
+empty.push({r:r,c:c});
+}
+
+}
+}
+
+if(empty.length > 0){
+
+let random = empty[Math.floor(Math.random()*empty.length)];
+
+board[random.r][random.c] = 2;
+
+updateBoard();
+
+}
+
+}
 });
 document.addEventListener("keydown", function(e){
 
