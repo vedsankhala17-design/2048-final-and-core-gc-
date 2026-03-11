@@ -1,6 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
     const tiles = document.querySelectorAll(".tile");
-
+let board = [
+[0,0,0,0],
+[0,0,0,0],
+[0,0,0,0],
+[0,0,0,0]
+];
     // start with two tiles
     addNumber();
     addNumber();
