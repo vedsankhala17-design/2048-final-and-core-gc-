@@ -72,5 +72,21 @@ moveDown();
 })
 
 function moveLeft(){
-console.log("Left move working");
+
+}
+
+function moveLeft(){
+for(let r=0;r<4;r++){
+let row = board[r];
+
+row = row.filter(num => num);
+
+while(row.length < 4){
+row.push(0);
+}
+
+board[r] = row;
+}
+
+updateBoard();
 }
