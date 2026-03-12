@@ -72,12 +72,18 @@ moveDown();
 })
 
 function moveLeft(){
-
-}
-
-function moveLeft(){
 for(let r=0;r<4;r++){
+
 let row = board[r];
+
+row = row.filter(num => num);
+
+for(let i=0;i<row.length-1;i++){
+if(row[i] == row[i+1]){
+row[i] = row[i]*2;
+row[i+1] = 0;
+}
+}
 
 row = row.filter(num => num);
 
@@ -86,6 +92,7 @@ row.push(0);
 }
 
 board[r] = row;
+
 }
 
 updateBoard();
