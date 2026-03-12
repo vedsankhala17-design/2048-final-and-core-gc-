@@ -96,4 +96,5 @@ board[r] = row;
 }
 
 updateBoard();
+addNumber();
 }
