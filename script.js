@@ -24,6 +24,7 @@ index++;
     // start with two tiles
     addNumber();
     addNumber();
+    updateBoard();
 
     function addNumber(){
 
