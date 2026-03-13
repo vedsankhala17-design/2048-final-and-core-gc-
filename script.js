@@ -100,3 +100,7 @@ board[r] = row;
 updateBoard();
 addNumber();
 }
+window.moveLeft = moveLeft;
+window.moveRight = moveRight;
+window.moveUp = moveUp;
+window.moveDown = moveDown;
